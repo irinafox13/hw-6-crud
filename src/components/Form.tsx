@@ -59,7 +59,7 @@ const Form = () => {
             </div>
             <form className='form'>
                 <label htmlFor="note">New note</label>
-                <textarea className='form-textarea' name="note" id="note" onChange={(e) => setNote(e.target.value)}></textarea>
+                <textarea className='form-textarea' value={note} name="note" id="note" onChange={(e) => setNote(e.target.value)}></textarea>
                 <button className='button form-button' type='submit' onClick={postData}>
                     <img src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IS0tIFVwbG9hZGVkIHRvOiBTVkcgUmVwbywgd3d3LnN2Z3JlcG8uY29tLCBHZW5lcmF0b3I6IFNWRyBSZXBvIE1peGVyIFRvb2xzIC0tPg0KPHN2ZyB3aWR0aD0iODAwcHgiIGhlaWdodD0iODAwcHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0xMSAxNkwxNSAxMk0xNSAxMkwxMSA4TTE1IDEySDNNNC41MTU1NSAxN0M2LjEzMDA3IDE5LjQxMiA4Ljg3OTU4IDIxIDEyIDIxQzE2Ljk3MDYgMjEgMjEgMTYuOTcwNiAyMSAxMkMyMSA3LjAyOTQ0IDE2Ljk3MDYgMyAxMiAzQzguODc5NTggMyA2LjEzMDA3IDQuNTg4MDMgNC41MTU1NSA3IiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+DQo8L3N2Zz4=' />
                 </button>
